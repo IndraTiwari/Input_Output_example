@@ -1,0 +1,8 @@
+<p>parent works!</p>
+<!-- msgFromParent have the value to be sent to child and child will hold this in @Input -->
+<app-child [msgFromParent]="msgFromParent"
+(valfromChild)="getChildVal($event)"></app-child>
+
+{{displayChildMsg}}
+
+<!-- valfromChild is @Output val sent by child  -->
